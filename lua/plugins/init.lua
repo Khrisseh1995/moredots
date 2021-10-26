@@ -111,8 +111,13 @@ return packer.startup(function()
       end,
    }
 
+
    use {
      'tpope/vim-fugitive',
+   }
+
+   use {
+     'tpope/vim-surround',
    }
 
    -- lsp stuff
@@ -233,8 +238,11 @@ return packer.startup(function()
    }
 
    -- file managing , picker etc
+   --
    use {
-      "kyazdani42/nvim-tree.lua",
+
+     'Khrisseh1995/nvim-tree.lua',
+     -- "kyazdani42/nvim-tree.lua",
       disable = not status.nvimtree,
       cmd = { "NvimTreeToggle", "NvimTreeFocus" },
       config = override_req("nvim_tree", "plugins.configs.nvimtree"),
