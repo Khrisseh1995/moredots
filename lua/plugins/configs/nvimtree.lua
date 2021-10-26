@@ -73,6 +73,10 @@ nvimtree.setup {
       update_cwd = false,
    },
    view = {
+     winopts = {
+       relativenumber = true,
+       number = true,
+     },
       allow_resize = true,
       side = "left",
       width = 40,
